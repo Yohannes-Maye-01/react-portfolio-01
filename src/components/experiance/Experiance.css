@@ -1,0 +1,118 @@
+.experiance_container{
+  
+  
+ 
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+     
+}
+.experience_header{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 4rem;
+     
+}
+ h3,.icons{
+     color: var(--color-primary);
+}
+.icons{
+     margin: 1.5rem 1rem ;
+     font-size: 2rem;
+    
+}
+small{
+     color: var(--color-light);
+}
+.front_end_experiance{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+background-color:var( --color-bg-variant) ;
+padding: 1rem;
+border-radius: 3rem;
+flex: 1 1;
+transition: var(--transition);
+}
+.front_end_experiance:hover ,.back_end_experiance:hover{
+background-color: transparent ;
+border-radius: 1rem solid var( --color-bg-variant) ;
+transform: scale(1.03);
+margin: 0.5rem;
+}
+.back_end_experiance{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     background-color:var( --color-bg-variant) ;
+     padding: 1rem;
+     border-radius: 3rem;
+     flex: 1 1;
+     transition: var(--transition);
+}
+.experiance_ditail{
+     display: flex;
+     padding: 1rem;
+     flex: 1 1;
+}
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+     .container{
+       width: var(--container-width-md);
+     }
+     .experiance_container{
+  
+  
+ 
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+         gap: 1rem;
+          
+     }
+     .icons{
+          margin: 1.5rem 1rem ;
+          font-size: 1rem;
+         
+     }
+     .front_end_experiance{
+          padding: 0;
+     
+     }
+     .back_end_experiance{
+         padding: 0;
+     
+     
+     }
+     h4{
+          font-size: 1rem;
+     }
+   }
+   /* MEDIA QUERIES (SMALL DEVICES) */
+   @media screen and (max-width: 750px) {
+     .container{
+       width: var(--container-width-sm);
+     }
+     .experiance_container{
+  
+  
+ 
+          display: grid;
+          grid-template-columns: 1fr;
+         gap: o.1rem;
+          
+     }
+     .icons{
+          margin: 1.5rem 1rem ;
+          font-size: 1rem;
+         
+     }
+     .front_end_experiance{
+          padding: o.2rem;
+     
+     }
+     .back_end_experiance{
+         padding: o.2rem;
+     
+     
+     }
+   } 
